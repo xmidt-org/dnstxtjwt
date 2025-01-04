@@ -3,7 +3,7 @@
 A Go library for creating and using JWTs via DNS TXT records.
 
 [![Build Status](https://github.com/xmidt-org/dnstxtjwt/actions/workflows/ci.yml/badge.svg)](https://github.com/xmidt-org/dnstxtjwt/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/gh/xmidt-org/dnstxtjwt/graph/badge.svg?token=XvcXIaXcmE)](https://codecov.io/gh/xmidt-org/dnstxtjwt)
+[![codecov](https://codecov.io/gh/xmidt-org/dnstxtjwt/graph/badge.svg?token=05G63V3nUM)](https://codecov.io/gh/xmidt-org/dnstxtjwt)
 [![Go Report Card](https://goreportcard.com/badge/github.com/xmidt-org/dnstxtjwt)](https://goreportcard.com/report/github.com/xmidt-org/dnstxtjwt)
 [![Apache V2 License](http://img.shields.io/badge/license-Apache%20V2-blue.svg)](https://github.com/xmidt-org/dnstxtjwt/blob/main/LICENSE)
 [![GitHub Release](https://img.shields.io/github/release/xmidt-org/dnstxtjwt.svg)](https://github.com/xmidt-org/dnstxtjwt/releases)
