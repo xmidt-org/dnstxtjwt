@@ -32,8 +32,8 @@ github.com/stretchr/testify v1.10.0 h1:Xv5erBjTwe/5IxqUQTdXv5kgmIvbHo3QQyRwhJsOf
 github.com/stretchr/testify v1.10.0/go.mod h1:r2ic/lqez/lEtzL7wO/rwa5dbSLXVDPFyf8C91i36aY=
 github.com/tj/assert v0.0.3 h1:Df/BlaZ20mq6kuai7f5z2TvPFiwC3xaWJSDQNiIS3Rk=
 github.com/tj/assert v0.0.3/go.mod h1:Ne6X72Q+TB1AteidzQncjw9PabbMp4PBMZ1k+vd1Pvk=
-github.com/xmidt-org/jwskeychain v1.1.0 h1:WhC6AcVMcy5IuLWbcYp//GGRPDmOpXmLQS02NPNdUwc=
-github.com/xmidt-org/jwskeychain v1.1.0/go.mod h1:aDQ9lGHwJYxCubgeJGXQQXGFkL3ZZStvfEHFEh4MO+Y=
+github.com/xmidt-org/jwskeychain v1.2.0 h1:5lLSNon/6po9ObuJTNAwHzQU8D9HIjknRHgLxMmyUWU=
+github.com/xmidt-org/jwskeychain v1.2.0/go.mod h1:aDQ9lGHwJYxCubgeJGXQQXGFkL3ZZStvfEHFEh4MO+Y=
 github.com/yuin/goldmark v1.4.13/go.mod h1:6yULJ656Px+3vBD8DxQVa3kxgyrAnzto9xy5taEt/CY=
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/crypto v0.0.0-20210921155107-089bfa567519/go.mod h1:GvvjBRRGRdwPK5ydBHafDWAxML/pGHZbMvKqRZ5+Abc=
