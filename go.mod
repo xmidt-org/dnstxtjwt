@@ -4,7 +4,7 @@ go 1.23.1
 
 require (
 	github.com/foxcpp/go-mockdns v1.1.0
-	github.com/lestrrat-go/jwx/v2 v2.1.5
+	github.com/lestrrat-go/jwx/v2 v2.1.6
 	github.com/stretchr/testify v1.10.0
 	github.com/tj/assert v0.0.3
 	github.com/xmidt-org/jwskeychain v1.2.0
