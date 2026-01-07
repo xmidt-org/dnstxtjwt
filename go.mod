@@ -3,7 +3,7 @@ module github.com/xmidt-org/dnstxtjwt
 go 1.23.1
 
 require (
-	github.com/foxcpp/go-mockdns v1.1.0
+	github.com/foxcpp/go-mockdns v1.2.0
 	github.com/lestrrat-go/jwx/v2 v2.1.6
 	github.com/stretchr/testify v1.11.1
 	github.com/xmidt-org/jwskeychain v1.2.0
