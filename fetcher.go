@@ -43,12 +43,12 @@ type FetcherOption interface {
 func New(opts ...FetcherOption) (*Fetcher, error) {
 	var r Fetcher
 
-	defaults := []FetcherOption{
+	defaults := []FetcherOption{ // nolint:prealloc
 		WithResolver(nil),
 		WithTimeout(0),
 	}
 
-	vadors := []FetcherOption{
+	vadors := []FetcherOption{ // nolint:prealloc
 		validateOptions(),
 	}
 
