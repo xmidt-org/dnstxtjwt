@@ -46,7 +46,7 @@ type CreateOption interface {
 func CreateRecord(jwt string, opts ...CreateOption) ([]string, error) {
 	var c create
 
-	defaults := []CreateOption{
+	defaults := []CreateOption{ // nolint:prealloc
 		WithMaxSize(0),
 		WithMaxLineLength(0),
 	}
