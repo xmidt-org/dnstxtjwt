@@ -18,5 +18,5 @@ permissions:
 
 jobs:
   project:
-    uses: xmidt-org/shared-go/.github/workflows/proj.yml@60838be4a68ca029af165c3d9067aa41f4e8db14 # v4.7.1
+    uses: xmidt-org/shared-go/.github/workflows/proj.yml@e8e27665ab2158bd4d27d5bc2250e99db7c66ae0 # v4.7.1
     secrets: inherit
