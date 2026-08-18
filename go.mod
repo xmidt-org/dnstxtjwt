@@ -5,12 +5,11 @@ go 1.25.0
 require (
 	github.com/foxcpp/go-mockdns v1.2.0
 	github.com/lestrrat-go/jwx/v2 v2.1.7
-	github.com/stretchr/testify v1.11.1
+	github.com/stretchr/testify v1.12.0
 	github.com/xmidt-org/jwskeychain v1.2.0
 )
 
 require (
-	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.4.1 // indirect
 	github.com/goccy/go-json v0.10.6 // indirect
 	github.com/lestrrat-go/blackmagic v1.0.4 // indirect
@@ -19,7 +18,6 @@ require (
 	github.com/lestrrat-go/iter v1.0.2 // indirect
 	github.com/lestrrat-go/option v1.0.1 // indirect
 	github.com/miekg/dns v1.1.57 // indirect
-	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/segmentio/asm v1.2.1 // indirect
 	golang.org/x/crypto v0.53.0 // indirect
 	golang.org/x/mod v0.14.0 // indirect
