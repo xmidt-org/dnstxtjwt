@@ -44,7 +44,7 @@ func TestFetch(t *testing.T) {
 	require.NoError(t, err)
 
 	var large string
-	for i := 0; i < 10000; i++ {
+	for range 10000 {
 		large += "a"
 	}
 	giant, err := MakeTrustedSet("fqdn.example.org", map[string]any{"example": large},

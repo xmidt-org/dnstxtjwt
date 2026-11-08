@@ -14,22 +14,22 @@ type create struct {
 
 func (c create) split(buf []byte) (result []string, n int) {
 	for idx := 0; len(buf) > 0; idx++ {
-		var max int
+		var limit int
 		switch {
 		case len(result) > 999:
-			max = c.maxLineLength - len("9999:")
+			limit = c.maxLineLength - len("9999:")
 		case len(result) > 99:
-			max = c.maxLineLength - len("999:")
+			limit = c.maxLineLength - len("999:")
 		default:
-			max = c.maxLineLength - len("99:")
+			limit = c.maxLineLength - len("99:")
 		}
 
-		if len(buf) < max {
-			max = len(buf)
+		if len(buf) < limit {
+			limit = len(buf)
 		}
 
-		s := string(buf[:max])
-		buf = buf[max:]
+		s := string(buf[:limit])
+		buf = buf[limit:]
 
 		line := fmt.Sprintf("%02d:%s", idx, s)
 		result = append(result, line)
@@ -46,7 +46,7 @@ type CreateOption interface {
 func CreateRecord(jwt string, opts ...CreateOption) ([]string, error) {
 	var c create
 
-	defaults := []CreateOption{ // nolint:prealloc
+	defaults := []CreateOption{ //nolint:prealloc // appended to conditionally below
 		WithMaxSize(0),
 		WithMaxLineLength(0),
 	}

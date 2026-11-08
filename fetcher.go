@@ -6,6 +6,7 @@ package dnstxtjwt
 import (
 	"context"
 	"errors"
+	"slices"
 	"time"
 
 	"github.com/lestrrat-go/jwx/v2/jws"
@@ -43,12 +44,12 @@ type FetcherOption interface {
 func New(opts ...FetcherOption) (*Fetcher, error) {
 	var r Fetcher
 
-	defaults := []FetcherOption{ // nolint:prealloc
+	defaults := []FetcherOption{ //nolint:prealloc // appended to conditionally below
 		WithResolver(nil),
 		WithTimeout(0),
 	}
 
-	vadors := []FetcherOption{ // nolint:prealloc
+	vadors := []FetcherOption{
 		validateOptions(),
 	}
 
@@ -115,7 +116,7 @@ func (r Fetcher) fetch(ctx context.Context) ([]string, error) {
 func (r *Fetcher) verify(ctx context.Context, txt string) (jwt.Token, []byte, error) {
 	input := []byte(txt)
 
-	opts := append(r.opts, jwt.WithContext(ctx))
+	opts := append(slices.Clone(r.opts), jwt.WithContext(ctx))
 
 	token, err := jwt.Parse(input, opts...)
 	if err != nil {

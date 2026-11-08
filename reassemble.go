@@ -46,7 +46,7 @@ func reassemble(lines []string) string {
 	// we can here, but don't be too strict.
 	var buf strings.Builder
 
-	for i := 0; i < len(parts); i++ {
+	for i := range len(parts) {
 		val, found := parts[i]
 		if !found {
 			return ""
